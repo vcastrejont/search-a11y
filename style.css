@@ -1,0 +1,145 @@
+body{
+  background-color: #eee;
+  font-family: source-sans-pro,sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.42857;
+}
+
+.flexbox-container {
+	display: flex;
+}
+
+.flexbox-container > aside  {
+	padding: 10px;
+  flex: 1;
+}
+
+main{
+  background-color:#fff;
+  height:100vh;
+  padding: 10px;
+  flex: 2;
+}
+
+nav{
+  padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    height: 45px;
+}
+
+nav .logo{
+  display: block;
+  width: 106px;
+  height: 24px;
+  margin: 0 auto;
+}
+
+.search-header {
+    background-color: #f7f7f7;
+    background-image: url(https://cdn.otstatic.com/mobileweb/mobile-web-frontend/images/Hero-chocolate-2.jpg);
+    background-size: cover;
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+    height: 200px
+}
+h1{
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 0;
+  background-color: rgba(51,51,51,.7);
+  border-radius: 3px 3px 0 0;
+  padding: 12px;
+}
+.title{
+  width: 100%;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #da3743;
+  display: block;
+  padding: 15px 10px;
+  margin: 0
+}
+.subtitle{
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0
+}
+
+.popular{
+  background-color: #fff;
+  padding: 20px 10px 10px 10px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: #717171;
+}
+
+.popular .title{
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color:#333
+}
+
+#search{
+  display: block;
+  background-color: #fff;
+  color: #333;
+  font-size: 1.5rem;
+  border-radius: 0 0 4px 4px;
+  border: none;
+  padding: 10px;
+  outline: none;
+  font-size: 1.3rem;
+  width: 100%
+}
+
+header{
+  position: relative;
+}
+#resultslist{
+  text-align: left;
+  margin-top: 5px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 2px 0 #ccc;
+  box-shadow: 0 1px 2px 0 #ccc;
+  position: absolute;
+  background-color: #fff;
+  width: 98%;
+  z-index: 900;
+  display: none;
+
+}
+.result-title{
+  border-radius: inherit;
+  padding: 10px;
+  padding-left: 15px;
+  margin: 0;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #717171;
+  background-color: #f7f7f7;
+}
+#resultslist ul {
+  list-style: none;
+  padding: 0
+}
+#resultslist ul li{
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc
+}
+#resultslist ul li a  {
+  color: #717171;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#resultslist ul li a p {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 400;
+    margin: 0;
+}
