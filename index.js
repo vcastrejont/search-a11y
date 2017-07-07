@@ -3,14 +3,18 @@ document.addEventListener("keydown", keyDownTextField); //
   function keyDownTextField(e){
       const list = document.querySelector('#resultslist');
       const first = document.querySelector("#resultslist>ul>li");
+      const status = document.querySelector('#status');
+      const items = document.querySelectorAll('#resultslist ul li');
       const activeElement = document.activeElement;
       var selectedItem;
-      searchInput.setAttribute("aria-expanded", "true");
+
       if (searchInput.value){
         list.style.display="block";
+        searchInput.setAttribute("aria-expanded", "true");
         updateStatus();
       }else{
         list.style.display="none";
+        searchInput.setAttribute("aria-expanded", "false");
       }
       switch(e.keyCode) {
       case 40:// down
@@ -47,13 +51,14 @@ document.addEventListener("keydown", keyDownTextField); //
          break;
       case 27: //esc
         list.style.display="none";
+        status.textContent =  "";
         searchInput.focus();
+        searchInput.setAttribute("aria-expanded", "false");
       break;
       }
 
       function updateStatus(){
-        const status = document.querySelector('#status');
-        const items = document.querySelectorAll('#resultslist ul li');
+
         status.textContent = items.length+ "  results";
       }
 

@@ -10,14 +10,14 @@ body{
 }
 
 .flexbox-container > aside  {
-	padding: 10px;
+	padding: 10px 30px;
   flex: 1;
 }
 
 main{
   background-color:#fff;
   height:100vh;
-  padding: 10px;
+  padding: 0px 30px;
   flex: 2;
 }
 
@@ -107,7 +107,9 @@ header{
   position: absolute;
   background-color: #fff;
   width: 98%;
-  z-index: 900;
+  max-height: 70vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
   display: none;
 
 }
@@ -142,4 +144,12 @@ header{
   font-size: 1.5rem;
   font-weight: 400;
     margin: 0;
+}
+
+#status{
+
+}
+
+h3{
+  font-size: 2rem
 }

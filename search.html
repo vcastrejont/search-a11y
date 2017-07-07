@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Opentable home</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="flexbox-container">
+
+  <main>
+    <nav>
+      <img src="img/logo.svg" alt="" class="logo">
+    </nav>
+    <header class="search-header">
+      <h1>Make restaurant reservations around the world</h1>
+      <input type="text" id="search" autofocus
+        role='combobox'
+        aria-expanded="false"
+        aria-autocomplete="inline"
+        aria-owns="resultslist"
+        onfocus="updateStatus()">
+
+       <div id="resultslist" role="listbox" >
+        <p class="result-title">LOCATIONS</p>
+        <ul>
+          <li><a href="#" tabindex="-1" role="option"><p>Manchester </p> United Kingdom</a></li>
+          <li><a href="#" tabindex="-1" role="option"><p>Manila </p>NCR, Philippines</a></li>
+          <li><a href="#" tabindex="-1" role="option"><p>Manhattan </p>New York, NY, United States</a>  </li>
+          <li><a href="#" tabindex="-1" role="option"><p>Mannheim </p>Germany</a></li>
+        </ul>
+        <p class="result-title">RESTAURANTS</p>
+        <ul>
+          <li><a href="#" tabindex="-1" role="option"><p>Manda Le Restaurant &amp; Lounge</p>Tucson</a></li>
+          <li><a href="#" tabindex="-1" role="option"><p>Manuels Restaurant </p>Tucson</a></li>
+          <li><a href="#" tabindex="-1" role="option"><p>Man cuso's Restuarant </p>Phoenix / Arizona</a></li>
+          <li><a href="#" tabindex="-1" role="option"><p>WrigleyMansion - Geordie's </p> Phoenix / Arizona</a></li>
+          <li><a href="#" tabindex="-1" role="option"><p>TheMandarin Grill </p>Tucson</a></li>
+          <li><a href="#" tabindex="-1" role="option"><p>Cafe DeManuel </p>Phoenix / Arizona</a></li>
+          <li><a href="#" tabindex="-1" role="option"><p>Casa Manana </p>Tucson</a></li>
+          </ul>
+        </div>
+        <div id="status" role="status" >
+
+        </div>
+
+    </header>
+    <p class="title">Find reservation</p>
+    <div class="popular">
+      <p class="subtitle">Popular Cuisines</p>
+      <p>Popular cuisine near you</p>
+    </div>
+  </main>
+  <aside>
+    <h3>Instructions:</h3>
+    <p>Type at least 2 charcters in the search input</p>
+    <ul>
+      <li>Use arrow keys to navigate through results</li>
+      <li>Press Esc to close results and return to input</li>
+    </ul>
+    <hr>
+
+    <h3>Expected behavior for combobox:</h3>
+    <ul>
+      <li>User can navigate trhourg results items</li>
+      <li>Widget should notify the total results number</li>
+      <li>Widget should notify wich item is selected</li>
+      <li>Pressing or click enter should open the highlighted option</li>
+    </ul>
+  </aside>
+</div>
+
+
+
+<script src="index.js"></script>
+
+</body>
+</html>
